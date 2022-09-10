@@ -1,6 +1,6 @@
 import "../scss/index.scss";
 
-$(".product-colors span").click(function () {
+$(".product-colors span").on("click", function () {
   $(".product-colors span").removeClass("active");
   $(this).addClass("active");
   $(".active").css("border-color", $(this).attr("data-color-sec") as string);
